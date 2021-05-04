@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Help</title>
+    <link href="TwitterHelp.css" rel="stylesheet">
+    <script src="TwitterHelp.js">
+    </script>
+</head>
+<body>
+    <div id="Container">
+        <div id="toparea">
+            <div id="topin">
+                <a href="javascript:history.back()"><img id="leftarrow" style="float: left;" src="images2/LeftArrow.png"></a>
+                <div id="topheading"><h2>Search Help in Twitter</h2></div>
+            </div>
+        </div>
+        <div id="marginer"></div>
+        <div id="container2">
+            <h3>Tips</h3>
+            <p>
+                1. Check replies and comments.<br>
+                2. Sort Tweets by Latest.
+            </p>
+            <img id="imgs" style="max-width: min-content;" src="images2/twt.png">
+            <hr>
+            <h3>Search</h3>
+            <form method="POST">
+                <label>Palce&nbsp;</label>
+                <input type="text" id="place" name="palce" placeholder="Enter Location" value="Jamshedpur" required>
+                <br><br>
+                Requirement
+                <br>
+                <input type="checkbox" id="bed" name="bed"  value="bed" checked>
+                <label for="bed">Bed</label>&emsp;
+                <input type="checkbox" id="icu" name="icu"  value="icu" checked>
+                <label for="icu">ICU</label>&emsp;
+                <input type="checkbox" id="oxygen" name="oxygen"  value="oxygen" checked>
+                <label for="oxygen">Oxygen</label>&emsp;
+                <input type="checkbox" id="ventilator" name="ventilator"  value="ventilator">
+                <label for="ventilator">Ventilator</label>&emsp;
+                <input type="checkbox" id="rtpcr" name="rtpcr"  value="rt pcr">
+                <label for="rtpcr">RT-PCR</label>&emsp;
+                <input type="checkbox" id="fabiflu" name="fabiflu"  value="fabiflu">
+                <label for="fabiflu">Fabiflu</label>&emsp;
+                <input type="checkbox" id="remdesivir" name="remdesivir"  value="remdesivir">
+                <label for="remdesivir">Remdesivir</label>&emsp;
+                <input type="checkbox" id="favipiravir" name="favipiravir"  value="favipiravir">
+                <label for="favipiravir">Favipiravir</label>&emsp;
+                <input type="checkbox" id="tocilizumab" name="tocilizumab"  value="tocilizumab">
+                <label for="tocilizumab">Tocilizumab</label>&emsp;
+                <input type="checkbox" id="plasma" name="plasma"  value="plasma">
+                <label for="plasma">Plasma</label>&emsp;
+                <input type="checkbox" id="ambulance" name="ambulance"  value="ambulance">
+                <label for="ambulance">Ambulance</label>&emsp;
+                <input type="checkbox" id="hospital" name="hospital"  value="hospital">
+                <label for="hospital">Hospital</label>&emsp;
+                <input type="checkbox" id="vaccine" name="vaccine"  value="vaccine">
+                <label for="vaccine">Vaccine</label>&emsp;
+                <br><br>
+                <label>Other&nbsp;</label>
+                <input type="text" id="other" name="other" placeholder="Enter other requirement">
+                <br><br>
+                <button type="button" name="Submit" value="Search" onclick="dosubmit()">Search</button>
+                <hr>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
