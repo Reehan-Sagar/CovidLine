@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Twitter Help</title>
+    
+    <link href="assets\images\icon.png" rel="icon">
+
+    <link href="TwitterHelp.css" rel="stylesheet">
+    <script src="TwitterHelp.js"></script>
+</head>
+<body>
+    <div id="Container">
+        <div id="toparea">
+            <div id="topin">
+                <a href="javascript:history.back()"><img id="leftarrow" style="float: left;" src="images/LeftArrow.png"></a>
+                <div id="topheading"><h2>Search Help in Twitter</h2></div>
+            </div>
+        </div>
+        <div id="marginer"></div>
+        <div id="container2">
+            <h3>Tips</h3>
+            <p>
+                1. Check replies and comments.<br>
+                2. Sort Tweets by Latest.
+            </p>
+            <img id="imgs" style="max-width: 98%;" src="images/twt.png">
+            <hr>
+            <h3>Search</h3>
+            <form method="POST">
+                <label>Palce&nbsp;</label>
+                <input type="text" id="place" name="palce" placeholder="Enter Location" required>
+                <br><br>
+                Requirements
+                <br>
+                <table id="table1">
+                    <tr>
+                        <td>
+                            <input type="checkbox" class="left" id="ambulance" name="ambulance"  value="ambulance">
+                            <label for="ambulance">Ambulance</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" class="middle" id="hospital" name="hospital"  value="hospital">
+                            <label for="hospital">Hospital</label>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" class="right" id="bed" name="bed"  value="bed" checked>
+                            <label for="bed">Bed</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" class="left" id="icu" name="icu"  value="icu" checked>
+                            <label for="icu">ICU</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" class="middle" id="oxygen" name="oxygen"  value="oxygen" checked>
+                            <label for="oxygen">Oxygen</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" class="right" id="ventilator" name="ventilator"  value="ventilator">
+                            <label for="ventilator">Ventilator</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" class="left" id="rtpcr" name="rtpcr"  value="rt pcr">
+                            <label for="rtpcr">RT-PCR</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" class="middle" id="remdesivir" name="remdesivir"  value="remdesivir">
+                            <label for="remdesivir">Remdesivir</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" class="right" id="fabiflu" name="fabiflu"  value="fabiflu">
+                            <label for="fabiflu">Fabiflu</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" class="left" id="favipiravir" name="favipiravir"  value="favipiravir">
+                            <label for="favipiravir">Favipiravir</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" class="middle" id="tocilizumab" name="tocilizumab"  value="tocilizumab">
+                            <label for="tocilizumab">Tocilizumab</label>&emsp;
+                        </td>
+                        <td>
+                            <input type="checkbox" class="right" id="plasma" name="plasma"  value="plasma">
+                            <label for="plasma">Plasma</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" class="left" id="vaccine" name="vaccine"  value="vaccine">
+                            <label for="vaccine">Vaccine</label>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <label>Other&nbsp;</label>
+                <input type="text" id="other" name="other" placeholder="Enter other requirement">
+                <br><br>
+                <button type="button" name="Submit" value="Search" onclick="dosubmit()">Search</button>
+                <hr>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
